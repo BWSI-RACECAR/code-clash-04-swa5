@@ -42,13 +42,12 @@ class Solution:
         # return Usergood
 
         for i in range(len(input)):
-            count = 0
             for j in range(i+1, len(input)):
-                if(input[i] == input[j]):
+                if input[i] == input[j]:
                     Usergood = False
-                else:
-                    Usergood = True
-        return Usergood 
+                else: 
+                    Usergood = True 
+        return Usergood
 
 def main():
     string1 = input()
