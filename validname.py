@@ -40,15 +40,25 @@ class Solution:
         #         else:
         #             Usergood = True
         # return Usergood
+        # list = []
+        # for char in input:
+        #     list.append(input[char])
+        
+        # for char 
 
-        for i in range(len(input)):
+        # for i in range(len(input)):
+        #     for j in range(i+1, len(input)):
+        #         if input[i] == input[j]:
+        #             Usergood = False
+        #         else: 
+        #             Usergood = True 
+        # return Usergood
+
+        for i in range(0, len(input)-1):
             for j in range(i+1, len(input)):
-                if input[i] == input[j]:
-                    Usergood = False
-                else: 
-                    Usergood = True 
-        return Usergood
-
+                if (input[i] == input[j]):
+                    return False
+        return True 
 def main():
     string1 = input()
 
