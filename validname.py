@@ -27,19 +27,38 @@ class Solution:
     def validateName(self,input):
         # type input: string
         # return: bool
-        reptol = 0  
+        # reptol = 0  
         Usergood = False  
-        # TODO: Write code below to return a bool with the solution to the prompt
-        for char in input: 
-            for nextchar in input: 
-                if char == nextchar and reptol == 0: 
-                    reptol+=1
-                if char == nextchar and reptol != 0:
-                    Usergood = False
-                else:
-                    Usergood = True
-        return Usergood
+        # # TODO: Write code below to return a bool with the solution to the prompt
+        # for char in input: 
+        #     reptol = 0  
+        #     for nextchar in input: 
+        #         if char == nextchar and reptol == 0: 
+        #             reptol+=1
+        #         if char == nextchar and reptol != 0:
+        #             Usergood = False
+        #         else:
+        #             Usergood = True
+        # return Usergood
+        # list = []
+        # for char in input:
+        #     list.append(input[char])
+        
+        # for char 
 
+        # for i in range(len(input)):
+        #     for j in range(i+1, len(input)):
+        #         if input[i] == input[j]:
+        #             Usergood = False
+        #         else: 
+        #             Usergood = True 
+        # return Usergood
+
+        for i in range(0, len(input)-1):
+            for j in range(i+1, len(input)):
+                if (input[i] == input[j]):
+                    return False
+        return True 
 def main():
     string1 = input()
 
